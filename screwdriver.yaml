@@ -1,7 +1,17 @@
 jobs:
-  main:
-    image: node:8
+  test01:
+    image: node:10
+    requires: [~pr, ~commit]
+    steps:
+      - echo: echo hoge  
+  test02:
+    image: node:10
     requires: [~pr, ~commit]
     steps:
       - echo: echo hoge
-      
+  test03:
+    image: node:10
+    requires: [~pr, ~commit]
+    steps:
+      - echo: echo hoge 
+ 
