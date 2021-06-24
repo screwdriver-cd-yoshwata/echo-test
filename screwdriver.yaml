@@ -4,4 +4,8 @@ jobs:
     requires: [~pr, ~commit]
     steps:
       - echo: echo hoge
-      
+  detach:
+    image: node:8
+    requires: []
+    steps:
+      - echo: echo hoge
